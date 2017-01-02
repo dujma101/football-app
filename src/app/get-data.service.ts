@@ -17,15 +17,12 @@ export class GetDataService {
     })
     return this.http.get('http://api.football-data.org/v1/fixtures/', opt)
       .map(res => res.json())
-      .subscribe((res) => {
-        this.data = res;;
-        console.log(this.data);
-    
-      })
+   
+      }
 
   }
 
-}
+
 
 
 

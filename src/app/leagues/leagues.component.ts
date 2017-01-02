@@ -7,15 +7,17 @@ import {GetDataService} from '../get-data.service'
 })
 export class LeaguesComponent {
   fixtures;
-
+  data;
   constructor(dataService: GetDataService) {
 
     dataService.getData()
-    response => this.fixtures = response
-    console.log(this.fixtures);
+      .subscribe((res) => {
+        this.data = res;;
+        console.log(this.data);
 
-  }
-} 
+      })
+   } 
+}  
 
 
 
