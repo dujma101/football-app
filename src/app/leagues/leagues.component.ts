@@ -6,7 +6,7 @@ import {GetDataService} from '../get-data.service'
   styles: []
 })
 export class LeaguesComponent {
-  fixtures;
+  
   data;
   constructor(dataService: GetDataService) {
 
